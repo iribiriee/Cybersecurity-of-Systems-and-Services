@@ -1,0 +1,23 @@
+# 1. Detect Student Packet
+# Matches: TCP traffic to 192.168.1.1 on port 54321 containing name.
+alert tcp any any -> 192.168.1.1 54321 (msg:"Assignment 7: Student Packet Detected"; content:"EIRINI_DOULAVERI"; sid:1000001; rev:1;)
+
+# 2. Detect Port Scan Activity (Example: HTTP)
+# Matches: TCP traffic to 192.168.1.2 on port 80.
+alert tcp any any -> 192.168.1.2 80 (msg:"Assignment 7: HTTP Port Scan Detected"; sid:1000002; rev:1;)
+
+# 3. Detect Base64 Malicious Packet
+# Matches: TCP traffic to 192.168.1.3 on port 8080.
+# (Run 'echo -n "YOUR_ID" | base64' in a terminal to find this string if you forgot it).
+alert tcp any any -> 192.168.1.3 8080 (msg:"Assignment 7: Malicious Base64 Payload Detected"; content:"MjAyMjAzMDA1Ng=="; sid:1000003; rev:1;)
+
+# 4. Detect Suspicious DNS Query
+# Matches: UDP traffic on port 53 asking for "malicious.example.com".
+alert udp any any -> any 53 (msg:"Assignment 7: Suspicious DNS Domain Detected"; content:"malicious"; content:"example"; sid:1000004; rev:1;)
+
+# 5. Detect Ping Test
+# Matches: ICMP traffic to 192.168.1.4 containing the specific test string.
+alert icmp any any -> 192.168.1.4 any (msg:"Assignment 7: Ping Test Detected"; content:"PingTest-2024"; sid:1000005; rev:1;)
+
+# 6. Detect SQL Slammer Worm (Added for Part 4)
+alert udp any any -> any 1434 (msg:"Assignment 7: SQL Slammer Worm Detected"; sid:1000006; rev:2;)

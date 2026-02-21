@@ -3,6 +3,7 @@
 This repository contains the coursework and projects for the **Systems and Services Security** (HPY 413) course at the ECE department of Technical University of Crete. The projects cover a wide range of security topics, including cryptography implementation, network security, intrusion detection, and malware analysis.
 
 ##  Assignments Overview
+All required files and project descriptions are included for every assignment. 
 
 ### 1. Secure Server-Client Communication (OpenSSL)
 Implementation of a secure client-server architecture using **C** and **OpenSSL**.
@@ -47,7 +48,7 @@ Implementation of a ransomware workflow in a controlled Docker environment.
 
 ---
 
-##  Disclaimer & Legal Notice
+##  Disclaimer
 
 **EDUCATIONAL PURPOSES ONLY**
 

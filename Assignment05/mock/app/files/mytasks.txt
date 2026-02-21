@@ -1,0 +1,5 @@
+* Push to production without testing<br>
+* Get educated on XSS, SQLi, Open Redirects,LFIs<br>
+* Get educated on input sanitization, instead of writing my own dummy functions<br>
+* Get educated on standardized security mechanisms (e.g., Content Security Policy) and their proper deployment, to successfully mitigate attacks<br>
+* Improve my website's security<br>
