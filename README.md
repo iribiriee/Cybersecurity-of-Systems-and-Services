@@ -45,15 +45,3 @@ Traffic analysis and intrusion detection using **Snort**.
 Implementation of a ransomware workflow in a controlled Docker environment.
 * **Functionality:** File encryption (OpenSSL), key management simulation, and file deletion.
 * **Environment:** Docker (Ubuntu-based lab).
-
----
-
-##  Disclaimer
-
-**EDUCATIONAL PURPOSES ONLY**
-
-The code, scripts, and techniques demonstrated in this repository are strictly for educational and academic purposes.
-Do not use the ransomware or exploit scripts on any production system or unauthorized network.
-Do not deploy the malware simulations outside of the specified isolated environments (Docker/VMs).
-
-The author takes no responsibility for any misuse of the information provided herein.
